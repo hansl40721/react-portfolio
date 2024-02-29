@@ -1,0 +1,15 @@
+import React from 'react'
+import '../style/Style.css'
+
+const Footer = () => {
+    return (
+        <div className="footer">
+            <div className=''>
+            <a target="_blank" href="https://github.com/hansl40721"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/lucas-hansen-15ab56181/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    )
+}
+
+export default Footer
