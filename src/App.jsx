@@ -16,15 +16,15 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <div className="app">
       <Header handleEvent={handleEvent} />
       <div className='content'>
         {activeComponent === "About" && <About />}
         {activeComponent === 'Contact' && <Contact />}
         {activeComponent === 'Portfolio' && <Portfolio />}
         {activeComponent === 'Resume' && <Resume />}
-        {<Footer />}
       </div>
+      {<Footer />}
     </div>
   );
 }
