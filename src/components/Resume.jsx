@@ -40,7 +40,11 @@ const Resume = () => {
 
     return (
         <div className='resume'>
-            <h1>Work Experience</h1>
+            <h1>Skills + Work Experience</h1>
+            <h2>Skills:</h2>
+            <p>
+                Java, JavaScript, HTML, CSS, Node, Express, SQL/Sequelize, MongoDB, React
+            </p>
             {workExperiences.map(work => (
                 <div key={work.id} className='resume-card'>
                     <div className='resume-item'>
