@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Style.css'
+import '../style/style.css'
 import petstagram from '../assets/petsagram.png'
 import weather from '../assets/weather.png'
 import travelBuddy from '../assets/travel-buddy.png'
