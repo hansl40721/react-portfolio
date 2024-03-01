@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -18,7 +18,7 @@ const App = () => {
     <div className="app">
       <Header handleEvent={handleEvent} />
       <div className='content'>
-        {activeComponent === "About" && <About />}
+        {activeComponent === 'About' && <About />}
         {activeComponent === 'Contact' && <Contact />}
         {activeComponent === 'Portfolio' && <Portfolio />}
         {activeComponent === 'Resume' && <Resume />}

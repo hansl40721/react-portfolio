@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import '../style/Style.css'
 import petstagram from '../assets/petsagram.png'
 import weather from '../assets/weather.png'
