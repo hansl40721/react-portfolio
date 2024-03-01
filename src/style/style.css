@@ -1,3 +1,11 @@
+/* general styling*/
+
+.app {
+    background-color: #2f4f4f;
+    color: white;
+    font-family: 'Raleway', 'sans-serif';
+}
+
 /* header */
 .header {
     display: flex;
@@ -9,7 +17,19 @@
 .logo {
     display: flex;
     justify-content: center;
-    background-color: #003333;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    background-color: #005566;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.logoImg {
+    height: 50px;
+    width: 50px;
+    top: 20px;
 }
 
 .nav {
@@ -19,24 +39,105 @@
 
 .navButton {
     margin-left: 3%;
+    margin-top: 10%;
     background-color:  #2E8B57;
     color: white;
+    height: fit-content;
 }
 
-/* general styling*/
-
-.app {
-    background-color: #2f4f4f;
-    color: white;
+.navButton:hover {
+    background-color: #20B2AA;
 }
 
 /* about page*/
-
 .about {
     width: 80%;
 }
 
 .about p {
+    font-size: larger;
+}
+
+/* portfolio */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+.portfolio h1 {
+    display: block;
+}
+
+.project {
+    display: flex;
+    height: 300px;
+    width: 600px;
+    margin: 2%;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+}
+
+.project h2 {
+    background-color: #2E8B57;
+    color: white;
+    height: 40px;
+    width: auto;
+    padding: 1%;
+    z-index: 1;
+    margin-top: 35%;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.projectImg {
+    max-width: 120%;
+    max-height: 120%; 
+    width: 720; 
+    height: 300; 
+    display: block; 
+    margin: auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+
+.project:hover .projectImg {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.project:hover h2 {
+    background-color: #20B2AA;
+}
+
+/* resume */
+.resume {
+    width: 80%;
+    padding-bottom: 10%;
+}
+
+.resume-card {
+
+}
+
+/* contact */
+
+.contact {
+    width: 80%;
+    padding-bottom: 10%;
+}
+
+.contact a {
+    font-family: 'Raleway', 'sans-serif';
+    font-size: larger;
+    color: white;
 
 }
 
@@ -53,9 +154,16 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #003333;
+    z-index: 2;
 }
 
 .footer a {
     color: #2E8B57;
 }
 
+.raleway-unique {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}

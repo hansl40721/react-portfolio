@@ -1,13 +1,14 @@
 import React from 'react'
 import '../style/Style.css'
+import logo from '../assets/Hansen_LogoFinal.png'
 
 const Header = ({ handleEvent }) => {
     return (
         <div className='header'>
             <div className='logo'>
-                <button onClick={() => handleEvent('About')}>
-                    <img src='../assets/Hansen_LogoFinal.png' alt="logo" />
-                </button>
+                <a onClick={() => handleEvent('About')}>
+                    <img className='logoImg' src={logo} alt="logo" />
+                </a>
             </div>
 
             <div className='nav'>
