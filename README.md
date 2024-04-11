@@ -19,11 +19,13 @@
 
   ## Installation 
 
-  Clone the GitHub respository and install application dependencies, or visit the deployed site
+  Clone the GitHub respository and install application dependencies
 
   ## Usage
 
   Run npm run dev in your terminal, or visit the deployed site
+
+  Deployed Site: https://hansen-portfolio.netlify.app/
 
   ## Credits 
 
